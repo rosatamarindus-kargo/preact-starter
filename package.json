@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "preact-simple",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "preact build",
+    "serve": "sirv build --cors --single",
+    "dev": "preact watch & npm run watch-t",
+    "lint": "eslint src",
+    "build-t": "postcss src/assets/css/tailwind.css -o src/tailwind.css",
+    "watch-t": "postcss src/assets/css/tailwind.css -o src/tailwind.css --watch"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-config-synacor": "^3.0.4",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "preact-cli": "^3.0.0-rc.6",
+    "prettier": "^2.0.5",
+    "sirv-cli": "^0.4.5"
+  },
+  "dependencies": {
+    "postcss-cli": "^7.1.1",
+    "preact": "^10.4.1",
+    "preact-render-to-string": "^5.1.2",
+    "preact-router": "^3.2.1",
+    "tailwindcss": "^1.4.5"
+  }
+}
