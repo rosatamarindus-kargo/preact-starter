@@ -2,7 +2,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/errors",
-    "standard-preact",
+    "preact",
     "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/react"
